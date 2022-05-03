@@ -18,6 +18,10 @@
 
 /* Вторинний колір фону кнопки на баннері : #188CE8 */
 
+/* Колір нижньої рамки у хедері : #ECECEC */
+
+/* Колір рамки для карток на сторінці потфоліо : #EEEEEE */
+
 
 
 
@@ -31,6 +35,8 @@
     --background-color: #F5F4FA;
     --secondary-bg-color: #2F303A;
     --hover-color-for-banner-button: #188CE8;
+    --header-border-line: #ECECEC;
+    --card-border-line: #EEEEEE;
 }
 
 
@@ -66,6 +72,11 @@ h1,h2,h3,h4,h5,h6,ul,p {
     
 }
 
+/* Header */
+
+.header {
+    border-bottom: 1px solid var(--header-border-line);
+}
 
 
 /* Logo */
@@ -265,6 +276,11 @@ h1,h2,h3,h4,h5,h6,ul,p {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+
+.projects >.item {
+    border-bottom: 1px solid var(--card-border-line);
+
 }
 
 /* Buttons */
