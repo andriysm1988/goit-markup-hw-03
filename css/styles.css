@@ -1,0 +1,272 @@
+
+
+/* Основний колір тексту : #757575 */
+
+/* Вторинний колір тексту : #212121 */
+
+/* Головний колір фону : #FFFFFF */
+
+/* Прозорий білий для пошти і тел в футері : rgba(255, 255, 255, 0.6) */
+
+/* Колір акценту : #2196F3 */
+
+/* Чорнрий колір для лого : #000000 */
+
+/* Колір фону : #F5F4FA */
+
+/* Вторинний колір фону : #2F303A*/
+
+/* Вторинний колір фону кнопки на баннері : #188CE8 */
+
+
+
+
+:root {
+    --primary-text-color: #757575 ;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --logo-black-color: #000000;
+    --primary-bg-color: #FFFFFF;
+    --transparent-white: rgba(255, 255, 255, 0.6);
+    --background-color: #F5F4FA;
+    --secondary-bg-color: #2F303A;
+    --hover-color-for-banner-button: #188CE8;
+}
+
+
+
+body {
+    font-family: "Roboto", "Montserrat", "Nunito", sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+
+/* Logo */
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--accent-color) ;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+
+.studio-top {
+    color: var(--logo-black-color) ; 
+}
+
+.studio-bottom {
+    color: var(--primary-bg-color);
+}
+
+
+/* Site-nav */
+
+.site-nav .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+}
+
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--accent-color);
+
+}
+
+.site-nav .current {
+    color: var(--accent-color)
+}
+
+
+
+
+
+/* Contacts */
+
+.contact-list {
+    font-weight: 500;
+    line-height:  1.14;
+    letter-spacing: 0.02em;
+}
+
+.contact-list .link {
+    color: var(--primary-text-color);
+}
+
+.contact-list .link:hover, .contact-list .link:focus {
+    color: var(--accent-color);
+
+}
+
+
+
+/* Баннер */
+
+.banner {
+    background-color: var(--secondary-bg-color);
+}
+
+.banner-title {
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+   
+    
+}
+
+.banner-button {
+
+    font-family: inherit;
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    
+}
+
+.banner-button:hover, .banner-button:focus {
+    background-color: var(--hover-color-for-banner-button);
+}
+
+/* Section */
+
+.section-title {
+    color: var(--title-text-color) ;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+
+/* Features */
+
+.section-title.features {
+    visibility: hidden;
+}
+
+
+.feature-list .title {
+    color: var(--title-text-color);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+}
+
+.feature-list .feature-text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Team */
+
+.section.team {
+    background-color: var(--background-color);
+}
+
+.team-list .title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team-list .position {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+}
+
+/* Projects */
+
+.projects .project-title {
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects .project-text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+/* Buttons */
+
+.button-list .button {
+
+    background-color: var(--background-color);
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.button-list .button:hover, .button-list .button:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color) ;
+   
+}
+
+.button-list .current {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
+
+/* Футер */
+
+
+.footer {
+    background-color: var(--secondary-bg-color);
+}
+
+/* Address */
+
+.address-list .street-name {
+    color: var(--primary-bg-color);
+    }
+
+.address-list .contact-info {
+    color: var(--transparent-white);
+}
+
+.address-list .contact-info:hover, .address-list .contact-info:focus {
+    color: var(--accent-color);
+}
+
+.street-name, .contact-info {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+
