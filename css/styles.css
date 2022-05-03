@@ -50,7 +50,21 @@ ul {
     list-style: none;
 }
 
+h1,h2,h3,h4,h5,h6,ul,p {
+    margin: 0;
+    padding: 0;
+}
 
+/* Container */
+
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 3px solid tomato;
+}
 
 
 
@@ -72,6 +86,12 @@ ul {
 
 .studio-bottom {
     color: var(--primary-bg-color);
+
+} 
+
+.logo.footer {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 
@@ -119,10 +139,14 @@ ul {
 /* Баннер */
 
 .banner {
+    text-align: center;
+
     background-color: var(--secondary-bg-color);
 }
 
 .banner-title {
+    margin-bottom: 30px;
+
     text-transform: uppercase;
     color: var(--primary-bg-color);
     font-weight: 900;
@@ -135,6 +159,11 @@ ul {
 }
 
 .banner-button {
+
+    min-width: 200px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border-color: transparent;
 
     font-family: inherit;
     color: var(--primary-bg-color);
@@ -153,18 +182,30 @@ ul {
 
 /* Section */
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-title {
+    margin-bottom: 50px;
+
     color: var(--title-text-color) ;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
 }
 
+.section-title.button {
+    display: none;
+
+}
+
 
 /* Features */
 
 .section-title.features {
-    visibility: hidden;
+    display: none;
 }
 
 
@@ -198,7 +239,11 @@ ul {
 .team-list .position {
     font-size: 16px;
     line-height: 2;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;   
+}
+
+.team-list .title, .feature-list .title {
+    margin-bottom: 10px;
 }
 
 /* Projects */
@@ -264,6 +309,9 @@ ul {
 }
 
 .street-name, .contact-info {
+    display: inline-block;
+    margin-bottom: 9px;
+
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
