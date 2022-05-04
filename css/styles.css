@@ -37,6 +37,7 @@
     --hover-color-for-banner-button: #188CE8;
     --header-border-line: #ECECEC;
     --card-border-line: #EEEEEE;
+    --projects-item-gap: 30px;
 }
 
 
@@ -65,15 +66,13 @@ h1,h2,h3,h4,h5,h6,ul,p {
 
 .container {
 
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     
 }
-
-
 
 
 /* Header */
@@ -119,11 +118,6 @@ h1,h2,h3,h4,h5,h6,ul,p {
 }
 
 
-
-
-
-
-
 /* Site-nav */
 
 .site-nav {
@@ -160,11 +154,6 @@ h1,h2,h3,h4,h5,h6,ul,p {
 .site-nav .current {
     color: var(--accent-color)
 }
-
-
-
-
-
 
 
 /* Contacts */
@@ -257,11 +246,8 @@ h1,h2,h3,h4,h5,h6,ul,p {
     letter-spacing: 0.03em;
 }
 
-
-
 .section-title.button {
     display: none;
-
 }
 
 
@@ -368,13 +354,14 @@ h1,h2,h3,h4,h5,h6,ul,p {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    margin-right: calc(-1 * var(--projects-item-gap) );
+    margin-bottom: calc(-1 * var(--projects-item-gap));
     
 }
 
-
-
 .projects .project-title {
     margin-bottom: 4px;
+    
 
     color: var(--title-text-color);
     font-size: 18px;
@@ -383,8 +370,7 @@ h1,h2,h3,h4,h5,h6,ul,p {
 }
 
 .projects .project-text {
-
-    margin-bottom: 20px;
+   
 
     color: var(--primary-text-color);
     font-size: 16px;
@@ -393,18 +379,20 @@ h1,h2,h3,h4,h5,h6,ul,p {
 }
 
 .projects .item {
-    width: 370px;
-    margin-right: 30px;
+    flex-basis: calc(100%  / 3 - var(--projects-item-gap) );
+    margin-right: var(--projects-item-gap);
+    margin-bottom:var(--projects-item-gap);
     border-bottom: 1px solid var(--card-border-line);
+   
     
 }
 
+.card-content {
+    padding: 20px 24px;
+}
 
 
-
-
-
-
+   
 
 
 /* Buttons */
@@ -485,10 +473,10 @@ h1,h2,h3,h4,h5,h6,ul,p {
     font-style: normal;
 }
 
+
 .contact-info.tel {
     margin-bottom: 0px;
 }
-
 
 
 
